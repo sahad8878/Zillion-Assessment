@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 
 import "./Banner.css";
-import MainMenu from "../MainMenu/MainMenu";
+import Navbar from "../Navbar/Navbar";
 
 // props types
 interface BannerProps {
@@ -53,8 +53,8 @@ const Banner: React.FC<BannerProps> = ({ showButton }) => {
 
   return (
     <>
-      {!showButton && <MainMenu />}
-
+      {!showButton && <Navbar />}
+      {/* <Navbar /> */}
       <div className="h-screen">
         <Swiper
           speed={2000}
